@@ -143,7 +143,7 @@ section#corpo {
 }
 
 article#noticia-principal h2 {
-    font-size: 12pt;
+    font-size: 13pt;
     color: #606060;
     background-color:  #dddddd;
     padding: 5px 0px 5px 10px;
@@ -219,18 +219,24 @@ aside#lateral {
     display: block;
     width: 400px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 aside#lateral h1 {
     font-family: 'FonteLogo', sans-serif;
     font-size: 20pt;
     color: #606060;
+    margin-top: 0px;
 }
 
 aside#lateral h2 {
     background-color: #606060;
-    font-size: 15pt;
+    font-size: 13pt;
     color: #ffffff; 
+    padding: 5px;
 }
 
 footer#rodape {
