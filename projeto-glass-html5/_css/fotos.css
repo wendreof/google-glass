@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+ul#album-fotos
+{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color:  #ffffff;
+    box-shadow: 1ox 1px 3px rgba(0,0,0,.4) ;
+}
+
+ul#album-fotos li#foto01
+{
+    background: url('../imagens/galeria-01.jpg') no-repeat;
+}
