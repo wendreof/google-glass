@@ -15,7 +15,7 @@
 		<h2>A revolução do Google está chegando</h2>
 		</hgroup>
 
-	<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+	<img id="icone" src="_imagens/contato.png"/>
 
 	<nav id="menu">
 	<h1>Menu Principal</h1>
@@ -27,40 +27,55 @@
 	     <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
 	</ul>
 	</nav>
-    </header>
+	</header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+	<section id="corpo-full">
+	<article id="noticia-principal">
+	  <header id="cabecalho-artigo">
+	   <hgroup>
+			<h3>Fale Conosco > Contato</h3>
+			<h1>Formulário de Contato</h1>
+			<h2>por Gustavo Guanabara</h2>
+			<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+	   </hgroup>
+	 </header>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>
+	<fieldset id="usuario">
+	<legend>Identificação do Usuário</legend>
+		<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+		<p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/>
+		<p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" />
+		<fieldset id="sexo"><legend>Sexo:</legend>
+			<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc" checked >Masculino</label><br/>
+			<input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+		</fieldset>
+		<p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc" /></p>
+	</fieldset>	
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+	<fieldset id="endereco">
+	<legend>Endereço do Usuário</legend>
+		<p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Avenida..."/></p>
+		<p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="9999" /></p>
+		<p><label for="cEst">Estado:</label><input/></p>
+		<p><label for="cCid">Cidade:</label><input/></p>
+	</fieldset>	
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+	<fieldset id="mensagem">
+	<legend>Mensagem do Usuário</legend>
+		<p>Grau de Urgência:
+		<p>Mensagem:
+	</fieldset>	
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+	<fieldset id="pedido">
+	<legend>Quero um Google Glass</legend>
+		<p>Gostaria de adquirir um Google Glass quando disponível
+		<p>Cor:
+		<p>Quantidade:
+		<p>Preço Total: R$
+	</fieldset>	
+	[BOTÃO ENVIAR]
+</form>
 
 <footer id="rodape">
 	<p>Copyright &copy; &reg; &trade; 2013 - by Wendreo Fernandes<br/>

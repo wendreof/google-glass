@@ -393,3 +393,29 @@ ul#album-fotos li#foto6:hover
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
+
+div#tv-radio
+{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+audio#musica
+{
+    display: block;
+    position: relative;
+    left: 574px;
+    top: 496px;
+    width: 300px;
+}
+
+video#filme
+{
+    display: block;
+    position: relative;
+    left: 87px;
+    top: 70px;
+    width: 440px;
+}
