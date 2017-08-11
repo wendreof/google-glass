@@ -78,8 +78,8 @@ figure.foto-legenda img {
     height: 100%;
 }
 
- /*figure.foto-legenda figcaption {
-    opacity: 0;
+ figure.foto-legenda figcaption {
+    /*opacity: 0;
     position: absolute;
     top: 0px;
     background-color: rgba(0,0,0,.4);
@@ -88,8 +88,8 @@ figure.foto-legenda img {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-   transition: opacity 1s; 
-} */
+   transition: opacity 1s; */
+} 
 
 figure.foto-legenda:hover figcaption {
     opacity: 1;
@@ -418,6 +418,21 @@ video#filme
     left: 87px;
     top: 70px;
     width: 440px;
+}
+
+video#filme-index02
+{
+    left: 87px;
+    top: 70px;
+    width: 640px;
+}
+
+video#filme-index01
+{
+    display: block;
+    left: 87px;
+    top: 70px;
+    width: 400px;
 }
 
 form 
