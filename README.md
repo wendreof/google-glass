@@ -1,1 +1,4 @@
-![alt text](http://url/projeto-glass-html5/_interface/01-index.jpg)
+
+<p align="center">
+  <img src="projeto-glass-html5/_interface/01-index.jpg)" width="350"/>
+</p>
