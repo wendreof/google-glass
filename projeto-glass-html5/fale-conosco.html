@@ -6,6 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+	function calc_total()
+	{
+		var qtd = parseInt(document.getElementById('cQtd').value);
+		tot = qtd * 1500;
+		document.getElementById('cTot').value = tot;
+	}
+</script>
 <body>
 	
 	<div id="interface">
@@ -40,7 +48,8 @@
 	   </hgroup>
 	 </header>
 
-<form>
+<form method="post" id="fContato" action="mailto:wendreoofernandes@gmail.com" oninput="calc_total();">
+
 	<fieldset id="usuario">
 	<legend>Identificação do Usuário</legend>
 		<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
@@ -57,24 +66,52 @@
 	<legend>Endereço do Usuário</legend>
 		<p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Avenida..."/></p>
 		<p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="9999" /></p>
-		<p><label for="cEst">Estado:</label><input/></p>
-		<p><label for="cCid">Cidade:</label><input/></p>
+		<p><label for="cEst">Estado:</label>
+		<select name="tEst" id="cEst">
+		 <optgroup label="Região Sudeste">
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="SP" selected>São Paulo</option>
+			<option value="MG">Minas Gerais</option>
+		 </optgroup>
+
+		  <optgroup label="Região Sul">
+			<option value="PR">Paraná</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="RS">Rio Grande do Sul</option>
+		 </optgroup>
+		</select></p>
+
+		<p><label for="cCid">Cidade:</label>
+		<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+		<datalist id="cidades">
+			<option value="São João da Boa Vista"></option>
+			<option value="Campinas"></option>
+			<option value="Aguaí"></option>
+		</datalist>
 	</fieldset>	
 
 	<fieldset id="mensagem">
 	<legend>Mensagem do Usuário</legend>
-		<p>Grau de Urgência:
-		<p>Mensagem:
+		<p><label for="cUrg"/>Grau de Urgência:</label>
+		Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+		<p><label for="cMsg"/>Mensagem:</label>
+		<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 	</fieldset>	
 
 	<fieldset id="pedido">
 	<legend>Quero um Google Glass</legend>
-		<p>Gostaria de adquirir um Google Glass quando disponível
-		<p>Cor:
-		<p>Quantidade:
-		<p>Preço Total: R$
+		<p><input type="checkbox" name="tPed" id="cPed" checked/>
+		   <label for="cPed"/>Gostaria de adquirir um Google Glass quando disponível</label>
+		<p><label for="cCor"/>Cor:</label>
+		<input type="color" name="tCor" id="cCor" value="#0000FF"/></p>
+		<p><label for="cQtd"/>Quantidade:</label>
+		<input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"</p>
+		<p><label for="cTot"/>Preço Total: R$</label>
+		<input type="number" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
 	</fieldset>	
-	[BOTÃO ENVIAR]
+
+	<input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
+
 </form>
 
 <footer id="rodape">
